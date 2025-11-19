@@ -1,0 +1,92 @@
+/* ===== static/style.css ===== */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #89f7fe 0%, #66a6ff 100%);
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+.container {
+    width: 90%;
+    max-width: 900px;
+    margin: 50px auto;
+    text-align: center;
+    background: rgba(255,255,255,0.9);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.2);
+    animation: fadeIn 1s ease-in-out;
+}
+
+.title {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #ff4e50;
+    animation: pulse 2s infinite;
+}
+
+.form label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+.form select, .form input {
+    padding: 8px 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.btn {
+    padding: 10px 20px;
+    margin-top: 20px;
+    background-color: #ff4e50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #1f8ef1;
+    transform: scale(1.05);
+}
+
+.data-table, .metrics-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+.data-table th, .data-table td, .metrics-table th, .metrics-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    transition: all 0.3s ease;
+}
+
+.data-table tr:hover, .metrics-table tr:hover {
+    background-color: #f1f1f1;
+}
+
+a.link {
+    display: block;
+    margin-top: 20px;
+    color: #1f8ef1;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {opacity: 0; transform: translateY(20px);}
+    to {opacity: 1; transform: translateY(0);}
+}
+
+@keyframes pulse {
+    0% {color: #ff4e50;}
+    50% {color: #1f8ef1;}
+    100% {color: #ff4e50;}
+}
