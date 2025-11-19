@@ -1,0 +1,21 @@
+<!-- ===== templates/about.html ===== -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="/static/style.css">
+<title>About</title>
+</head>
+<body>
+<div class="container">
+<h1>About / Authors</h1>
+<ul>
+{% for author in authors %}
+<li>{{ author }}</li>
+{% endfor %}
+</ul>
+<a href="/" class="btn">Back</a>
+</div>
+<script src="/static/script.js"></script>
+</body>
+</html>
